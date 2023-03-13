@@ -111,12 +111,25 @@ body {font-family: 'Roboto', sans-serif;color:#000;}
 .socialicons a i{transition: all linear .2s;}
 .socialicons a:hover i{transform: rotate(360deg);}
 .copyRgt{background-color: #f7f7f79c;}
-
+.pradeepimg1{
+    display: none;
+ }
+ .pradeepimg2{
+    display: block;
+  }
 @media (min-width:320px) and (max-width:500px){
+    .pradeepimg2{
+        display: none;
+      }
+   
+      .pradeepimg1{
+        display: block;
+      }
     .banner-head{padding-top: 0; padding-bottom: 30px;}
     .banner-head .heading {font-size: 40px;font-weight: 400;}
     .banner-head .head {color: #16C2D9;font-size: 36px;font-weight: 700;}
     .img1{margin-top: 30px;}
+    .pradeepimg{ margin-top: 100px;}
     .footerwrap {
         text-align: center;
     }
