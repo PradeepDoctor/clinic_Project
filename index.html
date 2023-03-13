@@ -50,7 +50,8 @@
     <div class="row">
         <div class="co-md-12">
            <!-- <img src="./image/whatsapp.svg" alt="whatsapp" class="img-fluid what"></a> -->
-            <a  target="_blank" title="Contact Us On WhatsApp" href="https://web.whatsapp.com/send?phone=+919899900143&amp;text=Hi, I would like to get more information.." class="whatsapplink hidemobile" style="background-color:#2DC100"><img src="./image/whatsapp.svg" alt="whatsapp" class="img-fluid what"></a>
+            <!-- <a  target="_blank" title="Contact Us On WhatsApp" href="https://web.whatsapp.com/send?phone=+919899900143&amp;text=Hi, I would like to get more information.." class="whatsapplink hidemobile" style="background-color:#2DC100"><img src="./image/whatsapp.svg" alt="whatsapp" class="img-fluid what"></a> -->
+            <a  target="_blank" title="Contact Us On WhatsApp" href="https://api.whatsapp.com/send?phone=+919899900143&amp;text=Hi, I would like to get more information.." class="whatsapplink hidemobile" style="background-color:#2DC100"><img src="./image/whatsapp.svg" alt="whatsapp" class="img-fluid what"></a>
         </div>
     </div>
 </div>
@@ -213,6 +214,12 @@
     <div class="row">
         <div class="container">
             <div class="row">
+
+                <div class="col-md-6">
+                    <div class="img mt-5">
+                        <img src="./image/Pradeep.png" alt="img" class="img-fluid" >
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <div class="texr-left mt-5">
                         <h2 class="head1">Dr Pradeep Sharma (PT)</h2>
@@ -226,11 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="img mt-5">
-                        <img src="./image/Pradeep.png" alt="img" class="img-fluid" >
-                    </div>
-                </div>
+              
             </div>
         </div>
     </div>
@@ -576,9 +579,10 @@
                 <div class="col-lg-3">
                     <ul>
                         <h3>Menu</h3>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a href="./services.html">Services</a></li>
+
+                        <li><a href="index.html">Home</a></li>
+                        <li> <a href="#about">About Us</a></li>
+                        <li><a href="#treatments">Services</a></li>
                         <li><a href="#">Blog</a></li>
 
                     </ul>
@@ -625,7 +629,7 @@
         var companyinp = document.getElementById("date").value;
         var messageinp = document.getElementById("message").value;
 
-
+        
         var url = "https://api.whatsapp.com/send?phone="+ 9899900143 +"&text="
             + "Hi, I am " + nameinp + "%0a"
             + "I am seeking an appointment for : " + companyinp + "%0a"
